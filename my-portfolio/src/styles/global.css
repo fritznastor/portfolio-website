@@ -61,3 +61,34 @@ body {
 .project-card:hover {
   background: #333;
 }
+
+section {
+  height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+}
+
+#home {
+  background: #1E1E1E;
+  color: white;
+}
+
+#projects {
+  background: #FF5C00;
+  color: white;
+}
+
+#about {
+  background: #222;
+  color: white;
+}
+
+#contact {
+  background: #333;
+  color: white;
+}
+

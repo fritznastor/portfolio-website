@@ -5,7 +5,7 @@ import "../styles/hero.css";
 export default function Hero() {
     return (
       <section id="home" className="hero">
-        <h1>Hi, I'm Daniella</h1>
+        <h1>Hi, I'm Fritz Nastor</h1>
       </section>
     );
   }

@@ -1,9 +1,8 @@
 export default function Contact() {
-    return (
-      <section>
-        <h1>Contact</h1>
-        <p>This is the Contact page.</p>
-      </section>
-    );
-  }
-  
+  return (
+    <section id="contact" className="contact">
+      <h1>📬 Contact Me</h1>
+      <p>You can reach me at: <strong>email@example.com</strong></p>
+    </section>
+  );
+}

@@ -1,9 +1,8 @@
 export default function About() {
-    return (
-      <section>
-        <h1>About Me</h1>
-        <p>This is the About page.</p>
-      </section>
-    );
-  }
-  
+  return (
+    <section id="about" className="about">
+      <h1>🙋‍♀️ About Me</h1>
+      <p>Hi! I'm Fritz. I'm a software engineer passionate about web development.</p>
+    </section>
+  );
+}
