@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* src/styles/global.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    text-align: center;
+  }
+  .navbar a {
+    color: white;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  .navbar a:hover {
+    opacity: 0.7;
+  }
+
+  /* src/styles/hero.css */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../public/background.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.hero .highlight {
+  color: #FF5C00;
+}
+
+/* src/styles/projects.css */
+.projects {
+  text-align: center;
+  padding: 50px;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.project-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.project-card:hover {
+  background: #333;
+}
