@@ -1,94 +1,83 @@
+/* Global Light Theme */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* src/styles/global.css */
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa; /* Light background */
+  color: #333; /* Dark text */
+}
+
+/* Navbar */
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px 0;
-    text-align: center;
-  }
-  .navbar a {
-    color: white;
-    margin: 0 20px;
-    cursor: pointer;
-    transition: opacity 0.3s;
-  }
-  .navbar a:hover {
-    opacity: 0.7;
-  }
-
-  /* src/styles/hero.css */
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url("../public/background.jpg") no-repeat center center/cover;
-  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff; /* White background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 15px 0;
   text-align: center;
 }
-.hero h1 {
-  font-size: 50px;
-  font-weight: bold;
-}
-.hero .highlight {
-  color: #FF5C00;
+
+.navbar a {
+  color: #333; /* Dark text */
+  margin: 0 20px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
 }
 
-/* src/styles/projects.css */
-.projects {
-  text-align: center;
-  padding: 50px;
-}
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-.project-card {
-  background: #222;
-  padding: 20px;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-.project-card:hover {
-  background: #333;
+.navbar a:hover {
+  color: #ff5c00; /* Accent color */
 }
 
+/* Sections */
 section {
-  height: 100vh; /* Full screen height */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 24px;
+  background: #ffffff; /* White background */
 }
 
 #home {
-  background: #1E1E1E;
-  color: white;
+  background: #f8f9fa; /* Light gray */
 }
 
 #projects {
-  background: #FF5C00;
-  color: white;
+  background: #e9ecef; /* Slightly darker gray */
 }
 
 #about {
-  background: #222;
-  color: white;
+  background: #ffffff; /* Pure white */
 }
 
 #contact {
-  background: #333;
-  color: white;
+  background: #e9ecef;
 }
 
+/* Buttons */
+button {
+  background: #ff5c00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #e04e00;
+}
+
+/* Enable smooth scrolling for the whole document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduce sudden stops when scrolling */
+html, body {
+  overscroll-behavior: contain;
+}

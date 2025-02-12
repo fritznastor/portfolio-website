@@ -1,22 +1,21 @@
-import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Projects from "./pages/Projects";
+import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
+import BackToTop from "./components/BackToTop"; // Import the button
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Home />
+      <Projects />
+      <About />
+      <Contact />
       <Footer />
+      <BackToTop /> {/* Add the Back to Top button */}
     </>
   );
 }
