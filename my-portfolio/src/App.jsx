@@ -11,8 +11,8 @@ export default function App() {
     <>
       <Navbar />
       <Home />
-      <Projects />
       <About />
+      <Projects />
       <Contact />
       <Footer />
       <BackToTop /> {/* Add the Back to Top button */}

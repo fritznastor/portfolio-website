@@ -1,0 +1,75 @@
+/* About Section */
+.about {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 0;
+    padding-bottom: 50px 0;
+    padding-left: 30px;
+    padding-right: 10px;
+    flex-direction: column;
+    background: #ffffff; /* Ensure white background */
+  }
+  
+  /* Two-Column Layout */
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    align-items: start;
+    gap: 250px;
+    padding-top: 0px;
+    margin-bottom: 50px;
+  }
+  
+  /* Left Column */
+  .about-left {
+    text-align: left;
+  }
+  
+  .about-title {
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0 0 20px 0; /* Ensure no extra top margin */
+  }
+  
+  .about-description {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 90%;
+  }
+  
+  /* Right Column */
+  .about-right {
+    text-align: left;
+    padding-top: 180px;
+    padding-right: 50px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 100%;
+  }
+  
+
+
+/* Adjust the divider line */
+.divider {
+    width: 225%; /* Makes it almost full-width */
+    height: 2px; /* Thin line */
+    background: #ddd; /* Grey color */
+    margin: 10px auto 30px auto; /* Centers it with spacing */
+  }
+  
+  
+  /* Responsive Fix */
+  @media (max-width: 768px) {
+    .about-container {
+      grid-template-columns: 1fr; /* Stack on smaller screens */
+      text-align: center;
+    }
+  
+    .about-footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  

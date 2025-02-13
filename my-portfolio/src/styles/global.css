@@ -1,33 +1,44 @@
 /* Global Light Theme */
 body {
+  background-color: #ffffff;
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background: #f8f9fa; /* Light background */
+  background: #ffffff; /* Light background */
   color: #333; /* Dark text */
 }
 
-/* Navbar */
+/* Navbar Styling */
 .navbar {
-  position: fixed;
+  position: fixed; /* Keeps navbar fixed at the top */
   top: 0;
+  left: 0;
   width: 100%;
-  background: #ffffff; /* White background */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  padding: 15px 0;
-  text-align: center;
+  background: rgba(255, 255, 255, 0.9); /* Light background with slight transparency */
+  backdrop-filter: blur(5px); /* Optional: Adds a subtle blur effect */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for visibility */
+  padding: 10px 0;
+  z-index: 1000; /* Ensures it stays above all sections */
+  display: flex;
+  justify-content: center; /* Centers navbar content */
+  align-items: center;
 }
 
+/* Navbar Links */
 .navbar a {
-  color: #333; /* Dark text */
+  color: black;
   margin: 0 20px;
+  font-weight: bold;
+  text-decoration: none;
   cursor: pointer;
-  transition: color 0.3s ease-in-out;
+  transition: opacity 0.3s;
 }
 
 .navbar a:hover {
-  color: #ff5c00; /* Accent color */
+  opacity: 0.7;
 }
+
+
 
 /* Sections */
 section {
@@ -46,15 +57,15 @@ section {
 }
 
 #projects {
-  background: #e9ecef; /* Slightly darker gray */
+  background: #f8f9fa; /* Light gray */
 }
 
 #about {
-  background: #ffffff; /* Pure white */
+  background: #f8f9fa; /* Light gray */
 }
 
 #contact {
-  background: #e9ecef;
+  background: #f8f9fa; /* Light gray */
 }
 
 /* Buttons */

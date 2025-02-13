@@ -4,10 +4,10 @@ import "../styles/global.css";
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <Link to="home" smooth="easeInOutQuad" duration={1000} offset={-50}>Home</Link>
-      <Link to="projects" smooth="easeInOutQuad" duration={1000} offset={-50}>Projects</Link>
-      <Link to="about" smooth="easeInOutQuad" duration={1000} offset={-50}>About</Link>
-      <Link to="contact" smooth="easeInOutQuad" duration={1000} offset={-50}>Contact</Link>
+      <Link to="home" smooth="easeInOutQuad" duration={0} offset={-50}>Home</Link>
+      <Link to="about" smooth="easeInOutQuad" duration={0} offset={-50}>About</Link>
+      <Link to="projects" smooth="easeInOutQuad" duration={0} offset={-50}>Projects</Link>
+      <Link to="contact" smooth="easeInOutQuad" duration={0} offset={-50}>Contact</Link>
     </nav>
   );
 }

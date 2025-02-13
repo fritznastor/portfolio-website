@@ -1,8 +1,37 @@
+import "../styles/home.css";
+
 export default function Home() {
   return (
     <section id="home" className="home">
-      <h1>🏠 Home Section</h1>
-      <p>Welcome to my portfolio! This is the home section.</p>
+      {/* Top Section with Location & Email */}
+      <div className="top-info">
+        <div className="info-item">
+          <p className="info-title">Based in</p>
+          <p>Chicago, IL</p>
+        </div>
+
+        <div className="info-item">
+          <p className="info-title">Say hello</p>
+          <p>
+            <a href="mailto:fritznastor@gmail.com">fritznastor@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+      {/* Left-side Name Section */}
+      <div className="content">
+        <div className="text-container">
+          <h1 className="hey">hi</h1>
+          <h1 className="im-fritz">i'm fritz :D</h1>
+        </div>
+
+        {/* Right-side Profile Picture */}
+        <div className="profile-picture">
+          <img src="/images/me.jpg" alt="Fritz Nastor" />
+        </div>
+      </div>
     </section>
   );
 }
+
+
