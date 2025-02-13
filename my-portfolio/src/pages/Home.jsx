@@ -1,5 +1,5 @@
 import "../styles/home.css";
-
+import GradientText from "../components/GradientText/GradientText";
 export default function Home() {
   return (
     <section id="home" className="home">
@@ -21,7 +21,9 @@ export default function Home() {
       {/* Left-side Name Section */}
       <div className="content">
         <div className="text-container">
-          <h1 className="hey">hi</h1>
+        <h1 className="hey">
+            <GradientText>hello</GradientText> {/* Apply GradientText here */}
+          </h1>
           <h1 className="im-fritz">i'm fritz :D</h1>
         </div>
 

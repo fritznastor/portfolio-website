@@ -3,7 +3,7 @@ import "./GradientText.css";
 export default function GradientText({
   children,
   className = "",
-  colors = ["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"], // Default colors
+  colors = ["#ff0000", "#ff4500", "#ff6a00", "#ff1493", "#ff0000"], // Lava lamp red shades
   animationSpeed = 8, // Default animation speed in seconds
   showBorder = false, // Default overlay visibility
 }) {
