@@ -9,7 +9,7 @@ const projects = [
     year: "2024",
     description:
       "A user-friendly calculator that visualizes compound interest over time, making complex financial concepts simple.",
-    images: ["/images/project1-1.png", "/images/project1-2.png", "/images/project1-3.png"],
+    images: ["my-portfolio/public/images/tastequest/tastequest_homepage.png"],
   },
   {
     name: "Browser Agnostic Tab Manager",
