@@ -7,13 +7,15 @@ export default function About() {
         {/* Left Side: Title & Main Introduction */}
         <div className="about-left">
           <h1 className="about-title">
-          <GradientText colors={["#00274D", "#00509E", "#003366", "#0077B6", "#001F3F"]}>who am i</GradientText>
+            <GradientText colors={["#00274D", "#00509E", "#003366", "#0077B6", "#001F3F"]}>who am i</GradientText>
           </h1>
           <div className="divider"></div> {/* Grey line */}
           <p className="about-description">
             yo, thanks for checking out my website. i'm fritz nastor – an aspiring software engineer based in chicago. 
-            
           </p>
+
+          {/* GIF below the text */}
+          <img src="/images/chipi-chipi-chapa-chapa.gif" alt="GIF showing my personality" className="about-gif" />
         </div>
 
         {/* Right Side: Detailed Information */}
@@ -25,11 +27,10 @@ export default function About() {
           </p>
           <p>
             i graduated from DePaul University with a degree in computer science and a minor in data analysis. during my
-            last quarter at DePaul, i placed 2nd in depaul's first ever hackathon with Northern Trust (still think i 
-            should've gotten 1st smh)
+            last quarter at DePaul, i placed 2nd in depaul's first ever hackathon with Northern Trust (i got robbed)
           </p>
           <p>
-          i am eager to gain real-world experience and develop with others to create impactful applications
+          i am excited to learn more and develop with others to create impactful applications
           </p>
         </div>
       </div>

@@ -56,7 +56,7 @@ export default function Experience() {
           <div className="experience-left">
             <h2 className="company-name">wrath aio</h2>
             <p className="company-subtitle">reselling software</p>
-            <p className="experience-date">2021 — 2023</p>
+            <p className="experience-date">nov 2020 — sept 2021</p>
           </div>
           <div className="experience-middle">
             <p><strong>position:</strong> software developer</p>

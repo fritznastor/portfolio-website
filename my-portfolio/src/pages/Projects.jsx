@@ -4,11 +4,11 @@ import { useState } from "react";
 
 const projects = [
   {
-    name: "Compound Interest Calculator",
-    keywords: "Web Development, Design, Finance",
+    name: "taste quest",
+    keywords: "Web Application, Python/Django, HTML/Tailwind CSS, Docker",
     year: "2024",
     description:
-      "A user-friendly calculator that visualizes compound interest over time, making complex financial concepts simple.",
+      "TasteQuest is a social dining web application that helps users discover the best restaurants based on cuisine, price, and location. Users can search for restaurants, track their visited locations, add ratings and reviews, and follow friends to see where they've been dining. The platform integrates social networking features, including friend requests and shared favorites, making it easier for users to explore and recommend dining spots. Built with Python/Django for the backend and Google Places API for restaurant data.",
     images: ["/images/tastequest/tastequest_homepage.png", 
       "/images/tastequest/tastequest_profilepage.png",
       "/images/tastequest/tastequest_favoritespage.png",
@@ -18,20 +18,20 @@ const projects = [
     ],
   },
   {
-    name: "Browser Agnostic Tab Manager",
-    keywords: "Web Development, Productivity, Organization",
-    year: "2022",
+    name: "Northern Trust FX Dashboard",
+    keywords: "Web Application , Python/Flask, Javascript/CSS",
+    year: "2024",
     description:
-      "A tool designed to manage and organize learning resources across different devices and browsers seamlessly.",
-    images: ["/images/project2-1.png", "/images/project2-2.png"],
+      "A tool designed to manage and access real-time foreign exchange rates for quick decision making. The application provides a dashboard with current exchange rates, historical data, and currency conversion tools.",
+    images: ["/images/northerntrusthackathon/northerntrust_homepage.png", "/images/northerntrusthackathon/northerntrust_fxpage.png", "/images/northerntrusthackathon/northerntrust_currentholdings.png", "/images/northerntrusthackathon/northerntrust_currencyconverter.png", "/images/northerntrusthackathon/northerntrust_fxprediction.png", "/images/northerntrusthackathon/northerntrust_fxpredictiongraph.png",],
   },
   {
-    name: "AI-Powered Task Scheduler",
-    keywords: "Machine Learning, Web App, Automation",
-    year: "2023",
+    name: "To Do List",
+    keywords: "Web Application, Python/Django, HTML/CSS, Docker",
+    year: "2024",
     description:
-      "An AI-driven task manager that helps optimize productivity by automatically scheduling tasks based on priority and deadlines.",
-    images: ["/images/project3-1.png", "/images/project3-2.png"],
+      "Ahh yes, the todo list, a classic. you can add multiple people to the list, and they can add tasks to the list. It's a good way to stay organized and get things done.",
+    images: ["/images/todolist/todolist_dashboard.png", "/images/todolist/todolist_settings.png", "/images/todolist/todolist_teams.png"],
   },
 ];
 

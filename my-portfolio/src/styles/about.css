@@ -65,7 +65,17 @@
   align-self: flex-start; /* Align it to the left */
 }
 
-  
+/* About GIF */
+.about-gif {
+  width: 100%; /* Adjust size */
+  align-self: center; /* Align it to the left */
+  max-width: 350px; /* Limits max width */
+  margin-top: 20px; /* Space from text */
+  margin-right: 165px; /* Space from text */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow */
+}
+
   
   /* Responsive Fix */
   @media (max-width: 768px) {
