@@ -9,7 +9,13 @@ const projects = [
     year: "2024",
     description:
       "A user-friendly calculator that visualizes compound interest over time, making complex financial concepts simple.",
-    images: ["/images/tastequest/tastequest_homepage.png", "/images/tastequest/tastequest_profilepage.png"],
+    images: ["/images/tastequest/tastequest_homepage.png", 
+      "/images/tastequest/tastequest_profilepage.png",
+      "/images/tastequest/tastequest_favoritespage.png",
+      "/images/tastequest/tastequest_socialpage.png",
+      "/images/tastequest/tastequest_friendinfopage.png",
+      "/images/tastequest/tastequest_docker.png",
+    ],
   },
   {
     name: "Browser Agnostic Tab Manager",

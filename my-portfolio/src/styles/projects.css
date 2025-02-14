@@ -130,7 +130,7 @@
     position: absolute; /* Place over the image */
     top: 50%;
     transform: translateY(-50%);
-    z-index: 10;
+    z-index: 50;
     pointer-events: none; /* Allows clicking through empty areas */
 }
 
@@ -156,12 +156,13 @@
 
 /* Left Button */
 .carousel-btn.left {
-    margin-top: 5px;
+    margin-top: 50px;
     margin-left: 45px; /* Bring it closer to the image */
 }
 
 /* Right Button */
 .carousel-btn.right {
+    margin-top: 50px;
     margin-right: 5px; /* Bring it closer to the image */
 }
 
