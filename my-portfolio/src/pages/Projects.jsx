@@ -9,7 +9,7 @@ const projects = [
     year: "2024",
     description:
       "A user-friendly calculator that visualizes compound interest over time, making complex financial concepts simple.",
-    images: ["my-portfolio/public/images/tastequest/tastequest_homepage.png"],
+    images: ["/images/tastequest/tastequest_homepage.png", "/images/tastequest/tastequest_profilepage.png"],
   },
   {
     name: "Browser Agnostic Tab Manager",
@@ -81,9 +81,13 @@ function ImageCarousel({ images }) {
 
   return (
     <div className="carousel">
-      <button className="carousel-btn left" onClick={prevImage}>&#8592;</button>
       <img src={images[currentIndex]} alt="Project Screenshot" className="carousel-image" />
-      <button className="carousel-btn right" onClick={nextImage}>&#8594;</button>
+
+      {/* Navigation Buttons Below Image */}
+      <div className="carousel-controls">
+        <button className="carousel-btn left" onClick={prevImage}>&#8592;</button>
+        <button className="carousel-btn right" onClick={nextImage}>&#8594;</button>
+      </div>
     </div>
   );
 }

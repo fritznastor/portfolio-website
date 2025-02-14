@@ -96,46 +96,93 @@
     justify-content: center;
 }
 
+/* Image Carousel */
 .carousel {
     position: relative;
-    max-width: 500px;
+    max-width: 750px; /* Increase max-width for larger images */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Make Images Bigger */
 .carousel-image {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-.carousel-btn {
-    position: absolute;
+/* Scale image on hover */
+.carousel-image:hover {
+    transform: scale(1.03);
+}
+
+/* Ensure Controls Wrap Around the Image */
+.carousel-controls {
+    display: flex;
+    justify-content: space-between; /* Evenly space buttons */
+    align-items: center;
+    width: 100%;
+    max-width: 100%; /* Match image width */
+    position: absolute; /* Place over the image */
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    pointer-events: none; /* Allows clicking through empty areas */
+}
+
+/* Standard Button Styling */
+.carousel-btn {
+    background: rgba(0, 0, 0, 0.6);
     color: white;
     border: none;
     cursor: pointer;
-    padding: 10px;
-    font-size: 20px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    position: relative; /* Stay inside carousel-controls */
+    z-index: 20; /* Ensure it's above everything */
+    pointer-events: auto; /* Make sure buttons are clickable */
 }
 
+/* Left Button */
 .carousel-btn.left {
-    left: -40px;
+    margin-top: 5px;
+    margin-left: 45px; /* Bring it closer to the image */
 }
 
+/* Right Button */
 .carousel-btn.right {
-    right: -40px;
+    margin-right: 5px; /* Bring it closer to the image */
 }
 
+/* Hover Effect */
 .carousel-btn:hover {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
 }
 
-/* Responsive */
+
+
+/* Responsive Fix */
 @media (max-width: 1024px) {
-    .project-row {
-        grid-template-columns: 1fr;
-        gap: 40px;
+    .carousel {
+        max-width: 500px; /* Smaller images on mobile */
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
     }
 
     .carousel-btn.left {
