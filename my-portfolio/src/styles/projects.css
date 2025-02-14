@@ -1,0 +1,148 @@
+/* Projects Section */
+.projects {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 10px;
+    background: #f8f9fa;
+    justify-content: flex-start; /* Align content to the top */
+    min-height: 70vh; /* Push title to the upper half */
+}
+
+.divider {
+    width: 100%; /* Adjust width to match About section */
+    max-width: 1850px; /* Ensures it doesn't stretch too far */
+    height: 2px;
+    background: #ddd;
+    margin: 10px auto 40px auto; /* Center it while keeping proper spacing */
+    flex-shrink: 0; /* Prevent it from shrinking */
+}
+
+/* Left-Aligned Title */
+.projects-title-container {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-start; /* Aligns title to the left */
+    margin-top: 50px; /* Adjust this value to push it higher */
+}
+
+.projects-title {
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 10px;
+    text-align: left; /* Ensures text is left-aligned */
+}
+
+
+/* Projects Container */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 50px; /* Keeps projects below the title */
+}
+
+/* Project Row */
+.project-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Left Column - Project Info */
+.project-left {
+    text-align: left;
+}
+
+.project-name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.project-keywords {
+    font-size: 16px;
+    font-style: italic;
+    color: #555;
+}
+
+.project-year {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.project-description {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 90%;
+    color: #333;
+}
+
+/* Right Column - Image Carousel */
+.project-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    position: relative;
+    max-width: 500px;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.carousel-btn.left {
+    left: -40px;
+}
+
+.carousel-btn.right {
+    right: -40px;
+}
+
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .project-row {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .carousel-btn.left {
+        left: 10px;
+    }
+
+    .carousel-btn.right {
+        right: 10px;
+    }
+}

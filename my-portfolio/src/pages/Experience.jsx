@@ -7,9 +7,11 @@ export default function Experience() {
       {/* Left-Aligned Title */}
       <div className="experience-title-container">
         <h1 className="experience-title">
-          <GradientText colors={["#00274D", "#00509E", "#003366", "#0077B6", "#001F3F"]}>
-            experience
-          </GradientText>
+        <GradientText colors={["#3D1E6D", "#5A2E9E", "#7A44C3", "#9A5FE5", "#B47FFF"]}>
+          experience
+        </GradientText>
+
+
         </h1>
       </div>
 
@@ -28,7 +30,15 @@ export default function Experience() {
           <div className="experience-middle">
             <p><strong>position:</strong> website developer</p>
             <p><strong>location:</strong> chicago, IL</p>
-            <p><strong>website:</strong> <a href="https://samilathaifusion.com" target="_blank" rel="noopener noreferrer">samilathaifusion.com</a></p>
+            <p><strong>website:</strong> &nbsp;
+    <a href="https://samilathaifusion.com" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       className="animated-link">
+       samilathaifusion.com
+    </a>
+</p>
+
           </div>
           <div className="experience-right">
             <p>

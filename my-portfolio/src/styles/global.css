@@ -94,3 +94,31 @@ html {
 html, body {
   overscroll-behavior: contain;
 }
+
+/* Base styling for the link */
+.animated-link {
+  position: relative;
+  text-decoration: none;
+  color: inherit; /* Keeps text color same as surrounding text */
+}
+
+/* Faint underline always visible */
+.animated-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.3); /* Faint grey underline always visible */
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: background 0.4s ease-in-out; /* Smooth background transition */
+}
+
+/* Darken from left to right on hover */
+.animated-link:hover::after {
+  background: black; /* Changes to black */
+  transition: background 0.4s ease-in-out; /* Smooth darkening effect */
+}
+
