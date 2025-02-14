@@ -1,12 +1,14 @@
 import "../styles/about.css";
-
+import GradientText from "../components/GradientText/GradientText";
 export default function About() {
   return (
     <section id="about" className="about">
       <div className="about-container">
         {/* Left Side: Title & Main Introduction */}
         <div className="about-left">
-          <h1 className="about-title">who am i</h1>
+          <h1 className="about-title">
+          <GradientText colors={["#00274D", "#00509E", "#003366", "#0077B6", "#001F3F"]}>who am i</GradientText>
+          </h1>
           <div className="divider"></div> {/* Grey line */}
           <p className="about-description">
             yo, thanks for checking out my website. i'm fritz nastor – an aspiring software engineer based in chicago. 

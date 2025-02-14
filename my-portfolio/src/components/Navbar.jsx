@@ -6,6 +6,7 @@ export default function Navbar() {
     <nav className="navbar">
       <Link to="home" smooth="easeInOutQuad" duration={0} offset={-50}>Home</Link>
       <Link to="about" smooth="easeInOutQuad" duration={0} offset={-50}>About</Link>
+      <Link to="experience" smooth="easeInOutQuad" duration={0} offset={-50}>Experience</Link>
       <Link to="projects" smooth="easeInOutQuad" duration={0} offset={-50}>Projects</Link>
       <Link to="contact" smooth="easeInOutQuad" duration={0} offset={-50}>Contact</Link>
     </nav>

@@ -1,0 +1,113 @@
+/* Experience Section */
+.experience {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 0;
+    padding-bottom: 50px 0;
+    padding-left: 30px;
+    padding-right: 10px;
+    flex-direction: column;
+    background: #f8f9fa;
+}
+
+/* Left-Aligned Title */
+.experience-title-container {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-start; /* Forces alignment to the left */
+}
+
+.experience-title {
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 10px;
+    text-align: left; /* Ensure the text is aligned to the left */
+}
+
+/* Divider Line */
+/* Divider Line */
+.divider {
+    width: 100%; /* Adjust width to match About section */
+    max-width: 1850px; /* Ensures it doesn't stretch too far */
+    height: 2px;
+    background: #ddd;
+    margin: 10px auto 40px auto; /* Center it while keeping proper spacing */
+}
+
+
+/* Experience Container */
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 120px; /* Space between entries */
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Each Row: Three-column grid */
+.experience-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+/* Left Column: Company Info */
+.experience-left {
+    margin-bottom: 125px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Middle Column */
+.experience-middle {    
+    margin-bottom: 32px;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Right Column: Job Description */
+.experience-right {
+    margin-top: 82px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.experience-row:nth-child(1) .experience-right {
+    margin-top: 30px;  /* Adjust top margin */
+}
+/* Adjust only Wrath AIO's experience-right column */
+.experience-row:nth-child(2) .experience-right {
+    margin-top: 50px;  /* Adjust top margin */
+}
+.experience-row:nth-child(2) .experience-middle {
+    margin-bottom: 75px;
+}
+
+
+.company-subtitle,
+.experience-date,
+.experience-middle p,
+.experience-right p {
+    font-family: "YourChosenFont", sans-serif; /* Same font for consistency */
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .experience-row {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}

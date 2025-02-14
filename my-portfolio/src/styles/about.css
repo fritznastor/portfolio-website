@@ -8,7 +8,7 @@
     padding-left: 30px;
     padding-right: 10px;
     flex-direction: column;
-    background: #ffffff; /* Ensure white background */
+    background: #f8f9fa;
   }
   
   /* Two-Column Layout */
@@ -21,16 +21,21 @@
     margin-bottom: 50px;
   }
   
-  /* Left Column */
-  .about-left {
-    text-align: left;
-  }
-  
   .about-title {
     font-size: 100px;
     font-weight: bold;
-    margin: 0 0 20px 0; /* Ensure no extra top margin */
-  }
+    margin: 0 0 0 0; /* Keep no extra margin on top */
+    text-align: center; /* Ensure text aligns to the left */
+}
+
+  .about-left {
+    width: 100%;
+    text-align: left;
+    justify-content: flex-start; /* Push content to the left */
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
   
   .about-description {
     font-size: 20px;
@@ -41,7 +46,7 @@
   /* Right Column */
   .about-right {
     text-align: left;
-    padding-top: 180px;
+    padding-top: 190px;
     padding-right: 50px;
     font-size: 20px;
     line-height: 1.6;
@@ -53,11 +58,13 @@
 
 /* Adjust the divider line */
 .divider {
-    width: 225%; /* Makes it almost full-width */
-    height: 2px; /* Thin line */
-    background: #ddd; /* Grey color */
-    margin: 10px auto 30px auto; /* Centers it with spacing */
-  }
+  width: 225%; /* Ensure it spans full width of its parent */
+  height: 2px; /* Thin line */
+  background: #ddd; /* Grey color */
+  margin: 10px 0 30px 0; /* Adjust spacing */
+  align-self: flex-start; /* Align it to the left */
+}
+
   
   
   /* Responsive Fix */
