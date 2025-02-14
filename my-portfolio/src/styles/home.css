@@ -39,11 +39,42 @@
     margin-bottom: 3px;
   }
   
-  .info-item a {
+/* Email Link Hover Animation */
+.info-item a {
     text-decoration: none;
     color: inherit;
-    border-bottom: 1px solid black;
-  }
+    position: relative; /* Required for pseudo-element positioning */
+}
+
+/* Faint grey underline always visible */
+.info-item a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Distance from text */
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.3); /* Faint grey underline */
+}
+
+/* The animated filling effect */
+.info-item a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%; /* Starts at 0 width */
+    height: 2px;
+    background-color: black; /* Darker underline */
+    transition: width 0.3s ease-in-out; /* Smooth animation */
+}
+
+/* On hover, the black underline fills in from left to right */
+.info-item a:hover::before {
+    width: 100%;
+}
+
+
   
   /* ----- MAIN CONTENT (Text & Image) ----- */
   .content {
