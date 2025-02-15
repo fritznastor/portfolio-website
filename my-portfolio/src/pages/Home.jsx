@@ -22,7 +22,7 @@ export default function Home() {
       <div className="content">
         <div className="text-container">
         <h1 className="hey">
-            <GradientText>hello</GradientText> {/* Apply GradientText here */}
+        <GradientText colors={["#FFA948", "#FF5C8A", "#B05CFF", "#4D9EFF"]}>hello</GradientText> {/* Apply GradientText here */}
           </h1>
           <h1 className="im-fritz">i'm fritz :D</h1>
         </div>

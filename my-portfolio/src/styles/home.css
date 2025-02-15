@@ -99,7 +99,7 @@
 
   
   .hey {
-    
+    font-size: 6rem;
     font-weight: bold;
     margin: 0;
   }
@@ -135,7 +135,7 @@
 }
 
   
-  .hey, .im, .fritz, .smiley {
+  .im, .fritz, .smiley {
     font-size: 6rem; /* Match "hi" font size */
     font-weight: bold;
   }

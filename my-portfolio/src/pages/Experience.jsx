@@ -28,7 +28,7 @@ export default function Experience() {
             <p className="experience-date">june 2024 — present</p>
           </div>
           <div className="experience-middle">
-            <p><strong>position:</strong> website developer</p>
+            <p><strong>position:</strong> tech consultant/website developer</p>
             <p><strong>location:</strong> chicago, IL</p>
             <p><strong>website:</strong> &nbsp;
     <a href="https://samilathaifusion.com" 
@@ -42,11 +42,13 @@ export default function Experience() {
           </div>
           <div className="experience-right">
             <p>
-              developed and launched a fully responsive multi-page WordPress website in under two weeks, 
-              integrating reservation and contact forms that increased customer engagement by 200%. 
-              Collaborated with the restaurant owners to refine the site's design and branding, 
-              implemented SEO strategies that boosted web traffic by 150%, and optimized page load 
-              speeds by 40%, enhancing the overall user experience across desktop and mobile devices.
+            Developed and launched a fully responsive multi-page WordPress website. 
+            Collaborated with the restaurant owners to refine the site's design and 
+            branding, integrating reservation and contact forms that increased customer 
+            engagement by 200%. Implemented SEO strategies that boosted web traffic by 
+            150% and optimized page load speeds by 40%, enhancing the overall user experience 
+            across desktop and mobile devices. Additionally, integrated Square's payment 
+            processing system to streamline transactions and improve the customer checkout experience.
             </p>
           </div>
         </div>
@@ -59,18 +61,18 @@ export default function Experience() {
             <p className="experience-date">nov 2020 — sept 2021</p>
           </div>
           <div className="experience-middle">
-            <p><strong>position:</strong> software developer</p>
+            <p><strong>position:</strong> software engineer</p>
             <p><strong>location:</strong> remote</p>
           </div>
           <div className="experience-right">
             <p>
-              developed and executed automated test scripts using Python and Selenium, 
-              improving software efficiency and stability for high-traffic product releases. designed 
-              comprehensive API test cases, identifying and resolving critical defects before 
-              deployment, reducing post-release issues by 45%. Created detailed user documentation that 
-              reduced onboarding time by 50%, improving overall team productivity. Collaborated with 
-              cross-functional teams to introduce unit testing frameworks, increasing test coverage by 
-              80% and ensuring software reliability. 
+            Developed and executed automated test scripts using Python, improving software 
+            efficiency and stability for high-traffic product releases. Designed comprehensive 
+            API test cases, identifying and resolving critical defects before deployment, 
+            reducing post-release issues by 45%. Created detailed user documentation that 
+            decreased onboarding time and improved the overall user experience. Collaborated 
+            with cross-functional teams to introduce unit testing frameworks, increasing test
+            coverage by 80% and ensuring software reliability.
             </p>
           </div>
         </div>
