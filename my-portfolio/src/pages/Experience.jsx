@@ -7,7 +7,7 @@ export default function Experience() {
       {/* Left-Aligned Title */}
       <div className="experience-title-container">
         <h1 className="experience-title">
-        <GradientText colors={["#3D1E6D", "#5A2E9E", "#7A44C3", "#9A5FE5", "#B47FFF"]}>
+        <GradientText colors={["#ff0000", "#ff4500", "#ff6a00", "#ff1493", "#ff0000"]}>
           experience
         </GradientText>
 

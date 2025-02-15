@@ -1,5 +1,7 @@
 import "../styles/about.css";
 import GradientText from "../components/GradientText/GradientText";
+import AboutCard from "../components/AboutCard"; // Import the updated Card component
+
 export default function About() {
   return (
     <section id="about" className="about">
@@ -21,7 +23,7 @@ export default function About() {
         {/* Right Side: Detailed Information */}
         <div className="about-right">
           <p>
-            i am passionate about working on meaningful projects and technologies that has the ability to leave a positive
+            i am passionate about working on meaningful projects and technologies that have the ability to leave a positive
             impact on people's lives. i'm always looking for new ways to learn and grow as a developer. i'm currently 
             learning how to use AWS :0
           </p>
@@ -30,9 +32,25 @@ export default function About() {
             last quarter at DePaul, i placed 2nd in depaul's first ever hackathon with Northern Trust (i got robbed)
           </p>
           <p>
-          i am excited to learn and develop with others to create impactful applications 
+            i am excited to learn and develop with others to create impactful applications 
           </p>
         </div>
+      </div>
+
+      {/* Cards Section */}
+      <div className="about-cards">
+        <AboutCard 
+          title="my hobbies" 
+          description="I love working out, climbing, photography, hanging out with friends, and eating!" 
+          images={["/images/interests_pics/quads_top.jpg", 
+            "/images/interests_pics/climbing.jpg",
+            "/images/interests_pics/winter_daniella.jpg",
+            "/images/interests_pics/cubs_gaem.jpg",
+            "/images/interests_pics/kbbq.jpg",
+            
+            
+          ]}
+        />
       </div>
     </section>
   );

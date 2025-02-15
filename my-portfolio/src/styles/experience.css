@@ -32,7 +32,7 @@
 /* Divider Line */
 .divider {
     width: 100%; /* Adjust width to match About section */
-    max-width: 1850px; /* Ensures it doesn't stretch too far */
+    max-width: 1650px; /* Ensures it doesn't stretch too far */
     height: 2px;
     background: #ddd;
     margin: 10px auto 40px auto; /* Center it while keeping proper spacing */

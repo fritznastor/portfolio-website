@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     padding: 5px 0;
-    padding-bottom: 120px; /* Increase bottom padding */
+    padding-bottom: 300px; /* Increase bottom padding */
     padding-left: 30px;
     padding-right: 10px;
     background: #f8f9fa;
@@ -17,7 +17,7 @@
 .projects-container {
     display: flex;
     flex-direction: column;
-    gap: 150px; /* Increased space between project entries */
+    gap: 100px; /* Increased space between project entries */
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
@@ -28,7 +28,7 @@
 
 .divider {
     width: 100%; /* Adjust width to match About section */
-    max-width: 1850px; /* Ensures it doesn't stretch too far */
+    max-width: 1650px; /* Ensures it doesn't stretch too far */
     height: 2px;
     background: #ddd;
     margin: 10px auto 40px auto; /* Center it while keeping proper spacing */
@@ -58,7 +58,7 @@
 .projects-container {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 10px;
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
@@ -111,7 +111,6 @@
 
 /* Image Carousel */
 .carousel {
-    margin-top: 100px;
     position: relative;
     max-width: 750px; /* Increase max-width for larger images */
     overflow: hidden;
@@ -119,6 +118,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+/* First Project Carousel */
+.project-row:nth-child(1) .carousel {
+    margin-top: 100px;
+    
+}
+
+/* Second Project Carousel */
+.project-row:nth-child(2) .carousel {
+    margin-top: 260px;
+    
+}
+
+/* Third Project Carousel */
+.project-row:nth-child(3) .carousel {
+    margin-top:280px;
+    
 }
 
 /* Make Images Bigger */
