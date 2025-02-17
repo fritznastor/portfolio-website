@@ -3,10 +3,11 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import About from "./pages/About";
+import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop"; // Import the button
 
 
-export default function App() {
+function App() {
   return (
     <>
       <Navbar />
@@ -14,7 +15,10 @@ export default function App() {
       <About />
       <Experience />
       <Projects />
+      <Footer />
       <BackToTop /> {/* Add the Back to Top button */}
     </>
   );
 }
+
+export default App;
