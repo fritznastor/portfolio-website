@@ -171,19 +171,3 @@ footer {
   background: black; /* Changes to black */
   transition: background 0.4s ease-in-out; /* Smooth darkening effect */
 }
-
-* {
-  box-sizing: border-box; /* Include padding and border in element's total width */
-}
-
-body {
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-img {
-  max-width: 100%; /* Ensure images don't overflow */
-  height: auto;
-}
