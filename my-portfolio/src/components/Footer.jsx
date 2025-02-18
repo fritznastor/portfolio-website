@@ -25,7 +25,6 @@ const Footer = () => {
   );
 };
 
-// ✅ Gradient Title Styling
 const GradientText = styled.h1`
   font-size: 100px;
   font-weight: bold;
@@ -33,7 +32,21 @@ const GradientText = styled.h1`
   background: linear-gradient(90deg, #00274D, #00509E, #003366, #0077B6, #001F3F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  
+  /* Animate gradient */
+  background-size: 300% 300%;
+  animation: gradientShift 3s infinite alternate ease-in-out;
+
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
 `;
+
 
 
 
