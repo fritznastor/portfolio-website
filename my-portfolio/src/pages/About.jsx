@@ -28,8 +28,8 @@ export default function About() {
             learning how to use AWS :0
           </p>
           <p>
-            i graduated from DePaul University with a degree in computer science and a minor in data analysis. during my
-            last quarter at DePaul, i placed 2nd in depaul's first ever hackathon with Northern Trust (i got robbed)
+            i graduated from DePaul University with a degree in computer science and a minor in data science. during my
+            last quarter at DePaul, i placed 2nd in depaul's first ever hackathon with Northern Trust 
           </p>
           <p>
             i am excited to learn and develop with others to create impactful applications 
