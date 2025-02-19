@@ -27,6 +27,9 @@ const Footer = () => {
 
 // ✅ Gradient Title Styling
 const GradientText = styled.h1`
+  @media (max-width: 768px) {
+  margin-top: 1300px;
+  }
   font-size: 100px;
   font-weight: bold;
   text-transform: lowercase;
@@ -47,9 +50,6 @@ const GradientText = styled.h1`
 `;
 
 
-  
-
-
 const TitleContainer = styled.div`
   width: 100%;
   text-align: center; /* Centers text */
@@ -65,6 +65,10 @@ const TitleContainer = styled.div`
 
 
 const FooterWrapper = styled.footer`
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
   width: 92%;
   max-width: 1200px;
   background: rgb(232, 232, 232);

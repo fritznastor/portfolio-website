@@ -211,13 +211,14 @@
 
     /* Adjust overall spacing */
     .projects {
-        margin-top: 200px;        
+        margin-top: 220px;        
+        margin-bottom: 1000px;
         padding: 20px;
     }
 
     /* Center Title and Reduce Size */
     .projects-title {
-        margin-left: 100px;
+        margin-left: 80px;
         
         font-size: 50px;
         text-align: center;
