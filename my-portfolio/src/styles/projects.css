@@ -207,22 +207,69 @@
 
 
 /* Responsive Fix */
-@media (max-width: 1024px) {
-    .carousel {
-        max-width: 500px; /* Smaller images on mobile */
+@media(max-width: 768px) {
+
+    /* Adjust overall spacing */
+    .projects {
+        margin-top: 200px;        
+        padding: 20px;
     }
 
+    /* Center Title and Reduce Size */
+    .projects-title {
+        margin-left: 100px;
+        
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .projects-title-container {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Make project rows stack vertically */
+    .project-row {
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        gap: 20px; /* Reduce spacing between projects */
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Make project descriptions full-width */
+    .project-left {
+        width: 90%;
+        text-align: center;
+    }
+
+    /* Ensure the carousel is below the project description */
+    .project-right {
+        order: 2; /* Moves the carousel below the text */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Make carousel images fit better on mobile */
+    .carousel {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Reduce button sizes */
     .carousel-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
     }
 
     .carousel-btn.left {
-        left: 10px;
+        left: 5px;
     }
 
     .carousel-btn.right {
-        right: 10px;
+        right: 5px;
     }
 }

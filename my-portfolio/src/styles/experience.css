@@ -106,10 +106,82 @@
 }
 
 
-/* Responsive Design */
-@media (max-width: 1024px) {
+
+
+@media (max-width: 768px) {
+
+    /* Reduce overall spacing */
+    .experience {
+        padding: 0px 0px; /* Less padding */
+        margin-top: 10px;
+    }
+
+    /* Adjust experience container spacing */
+    .experience-container {
+        margin-top: 20px; /* Reduce top margin */
+        text-align: center;
+        gap: 20px; /* Reduce space between entries */
+        width: 100%;
+        max-width: 100%;
+    }
+        /* Reduce divider spacing */
+    .divider {
+        visibility: hidden;
+    }
+
+    /* Reduce experience title size */
+    .experience-title {
+        font-size: 50px;
+        margin: 0 auto 0 auto; /* Less space below title */
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    /* Align title container */
+    .experience-title-container {
+        text-align: center;
+        padding: 0;
+    }
+
+    /* Reduce gaps in rows */
     .experience-row {
-        grid-template-columns: 1fr;
-        gap: 40px;
+        grid-template-columns: 1fr; /* Stack items */
+        gap: 15px; /* Reduce gap between sections */
+        margin-bottom: 15px; /* Less space between rows */
+    }
+
+    /* Remove excessive margins and paddings in columns */
+    .experience-left, 
+    .experience-middle, 
+    .experience-right {
+        text-align: center;
+        margin: 0;
+        padding: 0 50px; /* Add a little padding for readability */
+    }
+
+    /* Adjust left column (Company Info) */
+    .experience-left {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    /* Adjust middle column */
+    .experience-middle {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    /* Adjust right column (Job Description) */
+    .experience-right {
+        font-size: 14px;
+        margin-top: 0px; /* Remove top spacing */
+        line-height: 1.4; /* Improve readability */
+    }
+
+    /* Reduce specific margins for Wrath AIO */
+    .experience-row:nth-child(2) .experience-right {
+        margin-top: 20px; /* Reduce unnecessary space */
+    }
+    .experience-row:nth-child(2) .experience-middle {
+        margin-bottom: 20px;
     }
 }

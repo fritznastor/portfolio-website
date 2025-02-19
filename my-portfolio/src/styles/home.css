@@ -144,15 +144,28 @@
   /* Responsive adjustments */
 @media (max-width: 768px) {
   .home {
-    margin-bottom: 600px;
+    margin-bottom: 100px;
     margin-top: 20px;
+    padding-bottom: 0;
     height: auto;
   }
 
   .top-info {
-    display: none; /* Hide top info on mobile */
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    padding-left: 10px;
+    align-items: center;
+    
   }
-
+    
+  .info-title {
+   font-size: 10px;
+   text-transform: uppercase;
+   font-weight: bold;
+   margin-bottom: 2px;
+  }
+  
   .content {
     flex-direction: column-reverse; /* Reverse order for mobile */
     align-items: center;
@@ -164,15 +177,15 @@
   .profile-picture {
     width: 100%;
     display: flex;
-    justify-content: center; /* Center the image */
+    justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    margin-left: 50px;
   }
 
   .profile-picture img {
-    height: auto;
-    max-width: 95%; /* Ensure the image doesn't overflow */
-    border-radius: 15px;
+    height: 70vh; /* Set a specific height to make the image smaller */
+    max-width: 80%; /* Ensure it doesn't overflow */
+    border-radius: 25px;
+    margin-right: 22px;
   }
 
   .text-container {
@@ -192,6 +205,7 @@
 
   .hey, .im-fritz {
     font-size: 3rem;
+    margin-right: 30px;
     display: inline; /* Keep text on one line */
   }
 
@@ -210,7 +224,7 @@
   }
 }
 
-@media (min-width: 569px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .content {
     flex-direction: row; /* Keep row layout for larger screens */
     align-items: center;

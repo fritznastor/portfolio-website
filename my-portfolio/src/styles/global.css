@@ -171,3 +171,11 @@ footer {
   background: black; /* Changes to black */
   transition: background 0.4s ease-in-out; /* Smooth darkening effect */
 }
+
+@media (max-width: 768px) {
+  .back-to-top {
+      display: none; /* Hides the button on mobile screens */
+  }
+  
+}
+
