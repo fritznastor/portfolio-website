@@ -29,7 +29,7 @@ export default function Home() {
 
         {/* Right-side Profile Picture */}
         <div className="profile-picture">
-          <img src="/images/me.jpg" alt="Fritz Nastor" />
+          <img src="/images/me.jpeg" alt="Fritz Nastor" />
         </div>
       </div>
     </section>
